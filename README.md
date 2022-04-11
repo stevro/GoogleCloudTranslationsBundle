@@ -9,7 +9,8 @@ composer require stev/google-cloud-translations-bundle --dev
 Initialize the bundle for dev env.
 <pre><code>$bundles[] = new \Stev\GoogleCloudTranslateBundle\StevGoogleCloudTranslateBundle();</code></pre>
 
-#configuration
+#Configuration
+
 Get your Google Cloud Key (https://cloud.google.com/translate/docs/quickstarts) and save it in your project in "app/data/key.json" or anywhere you want. Just make sure it's not a public folder.
 
 Add the following configuration to config_dev.yml
@@ -34,7 +35,8 @@ jms_translation:
             output_format: xliff
 </code></pre>
 
-#usage
+#Usage
+
 Let's suppose your default language is English.
 1. Extract your translations using JMS command
    <pre><code>php app/console translation:extract --config=app</code></pre>
