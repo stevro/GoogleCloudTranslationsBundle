@@ -45,3 +45,7 @@ Let's suppose your default language is English.
    <pre><code>php app/console stev:google_cloud_translate --config=app --sourceLocale=en --destinationLocale=fr</code></pre>
 
 Now if you check your French translations files you should find all of your messages translated into French.
+This bundle will not translate the following messages:
+- The ones that are not NEW in the destination language.
+- The ones that are NEW in the source language.
+- Might break the messages with plural syntax or with placeholders. So those should be translated manually firstly or carefully checked afterwards for any break.
