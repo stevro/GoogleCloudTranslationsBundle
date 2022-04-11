@@ -1,0 +1,9 @@
+services:
+  stev_google_cloud_translate.services.google_translator:
+    class: Stev\GoogleCloudTranslateBundle\Services\GoogleTranslator
+    arguments: ['@jms_translation.loader_manager', '@stev_google_cloud_translate.services.google_translate_api','@logger','@jms_translation.file_writer']
+
+  stev_google_cloud_translate.services.google_translate_api:
+    class: Stev\GoogleCloudTranslateBundle\Services\GoogleTranslateAPI
+    arguments: ['%stev_google_cloud_translate.translate_api_config%']
+
