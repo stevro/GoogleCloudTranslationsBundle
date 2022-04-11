@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2022-04-11T15:30:02Z" source-language="en" target-language="fr" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="a2bc3e7e06eff3d12393861b7f7a583a7299d91d" resname="__test_msg_label">
+        <source>Test message label</source>
+        <target state="new">Test message label</target>
+        <jms:reference-file line="4">/../src/AppBundle/Resources/views/test.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="53e9f0f9bef93def0fef03aa31c34cfa7bd59cf6" resname="_controller_test_message">
+        <source>_controller_test_message</source>
+        <target state="new">_controller_test_message</target>
+        <jms:reference-file line="22">/../src/AppBundle/Controller/DefaultController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="afd8da6821d87e078c75b48bc40c0133300279c6" resname="_placeholder_message">
+        <source>_placeholder_message</source>
+        <target state="new">_placeholder_message</target>
+        <jms:reference-file line="27">/../src/AppBundle/Controller/DefaultController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="767602664d6460461f1f8e3f7f59667850d420df" resname="_plural_message">
+        <source>_plural_message</source>
+        <target state="new">_plural_message</target>
+        <jms:reference-file line="24">/../src/AppBundle/Controller/DefaultController.php</jms:reference-file>
+        <jms:reference-file line="25">/../src/AppBundle/Controller/DefaultController.php</jms:reference-file>
+        <jms:reference-file line="26">/../src/AppBundle/Controller/DefaultController.php</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

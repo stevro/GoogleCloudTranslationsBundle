@@ -20,6 +20,9 @@
     "google/cloud-translate": "^1.12",
     "jms/translation-bundle": "^1.4"
   },
+  "require-dev": {
+    "symfony/phpunit-bridge": "^5.2"
+  },
   "autoload": {
     "psr-4": {
       "Stev\\GoogleCloudTranslateBundle\\": ""
