@@ -3,13 +3,16 @@ A Symfony bundle to translate your application using Google cloud Translations A
 
 #Install
 <pre><code>
-composer require stev/google-cloud-translations-bundle
+composer require stev/google-cloud-translations-bundle --dev
 </code></pre>
+
+Initialize the bundle for dev env.
+<pre><code>$bundles[] = new \Stev\GoogleCloudTranslateBundle\StevGoogleCloudTranslateBundle();</code></pre>
 
 #configuration
 Get your Google Cloud Key (https://cloud.google.com/translate/docs/quickstarts) and save it in your project in "app/data/key.json" or anywhere you want. Just make sure it's not a public folder.
 
-Add the following configuration to config.yml
+Add the following configuration to config_dev.yml
 <pre><code>
 stev_google_cloud_translate:
     keyFilePath: '%kernel.root_dir%/../data/cp-google-cloud-key.json'
@@ -34,9 +37,9 @@ jms_translation:
 #usage
 Let's suppose your default language is English.
 1. Extract your translations using JMS command
-   <code>php app/console translation:extract --config=app</code>
+   <pre><code>php app/console translation:extract --config=app</code></pre>
 2. Translate the first set of messages in your default language (english). All default language translations must be provided by you/developers.
 3. Use the following command to translate all messages from your default language to any other language supported by Google Translations:
-   <code>php app/console stev:google_cloud_translate --config=app --sourceLocale=en --destinationLocale=fr</code>
+   <pre><code>php app/console stev:google_cloud_translate --config=app --sourceLocale=en --destinationLocale=fr</code></pre>
 
 Now if you check your French translations files you should find all of your messages translated into French.
