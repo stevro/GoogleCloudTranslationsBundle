@@ -40,7 +40,7 @@ jms_translation:
 Let's suppose your default language is English.
 1. Extract your translations using JMS command
    <pre><code>php app/console translation:extract --config=app</code></pre>
-2. Translate the first set of messages in your default language (english). All default language translations must be provided by you/developers.
+2. Translate the first set of messages in your default language (english). All default language translations must be provided by you/developers. You can use the web UI provided by JMS for that https://jmsyst.com/bundles/JMSTranslationBundle/master/webinterface.
 3. Use the following command to translate all messages from your default language to any other language supported by Google Translations:
    <pre><code>php app/console stev:google_cloud_translate --config=app --sourceLocale=en --destinationLocale=fr</code></pre>
 

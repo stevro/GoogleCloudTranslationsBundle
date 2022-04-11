@@ -68,7 +68,6 @@ class GoogleTranslator
 
     public function translate($sourceLanguage, $destinationLanguage)
     {
-//        $client = $this->googleCloudAPI->getClient();
 
         $destinationCatalogue = $this->buildDestinationCatalogue($destinationLanguage);
         $sourceCatalogue = $this->buildSourceCatalogue($sourceLanguage);
