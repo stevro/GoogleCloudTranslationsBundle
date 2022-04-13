@@ -1,4 +1,5 @@
 # GoogleCloudTranslationsBundle
+This is the documentation for Symfony 2. Symfony 6 version of the bundle is available starting with v2.0
 A Symfony bundle to translate your application using Google cloud Translations API
 
 #Install
