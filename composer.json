@@ -14,9 +14,8 @@
   ],
   "require": {
     "php": ">=5.5",
-    "ext-json": "*",
-    "symfony/framework-bundle": "2.7.*|2.8.*",
-    "symfony/symfony": "2.7.*|2.8.*",
+    "ext-json": "*",    
+    "symfony/symfony": "2.7.*|2.8.*|3.*",
     "google/cloud-translate": "^1.12",
     "jms/translation-bundle": "^1.4"
   },
